@@ -1,4 +1,4 @@
-
+@import "mixins.less";
 
 @page_width: 960px;
 @page_padding: 20px;
@@ -12,4 +12,8 @@ div.wrap {
     width: @page_width;
     padding: @page_padding;
     margin: auto;
+
+    background-color: red;
+    .overflow-x(hidden);
+    .opacity(0.5);
 }
