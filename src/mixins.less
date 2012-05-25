@@ -23,6 +23,23 @@
 }
 
 //
+// Box Properties
+//
+.overflow-x(@of) {
+    overflow-x: @of;
+    -ms-overflow-x: @of;
+}
+
+.overflow-y(@of) {
+    overflow-y: @of;
+    -ms-overflow-y: @of;
+}
+
+// .overflow-style
+// .rotation
+// .rotation-point
+
+//
 // Border and Outline Properties
 //
 .border-radius(@radius) {
@@ -62,7 +79,6 @@
     -o-border-image: url('{@source}') @slice @width @outset @repeat;
 }
 
-// TODO when browser compatible
 // .border-image-outset
 // .border-image-repeat
 // .border-image-slice
