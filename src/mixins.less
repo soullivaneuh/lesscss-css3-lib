@@ -19,7 +19,7 @@
     -webkit-background-size: @size_x, @size_y;
 }
 .background-size(@size) {
-    background-size(@size, @size);
+    .background-size(@size, @size);
 }
 
 //
@@ -90,3 +90,23 @@
 // .overflow-style
 // .rotation
 // .rotation-point
+
+//
+// Color Properties
+//
+
+// .color-profile
+
+.opacity(@op: 1) {
+    @opPrct: @op * 100;
+
+    opacity: @op;
+    -webkit-opacity: @op;
+    -moz-opacity: @op;
+    -khtml-opacity: @op;
+    -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{opPrct})";
+    filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opPrct})";
+    filter: alpha(opacity=@opPrct);
+}
+
+// .rendering-intent
