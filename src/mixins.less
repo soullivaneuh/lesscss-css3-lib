@@ -1,0 +1,55 @@
+// Based on http://www.w3schools.com/cssref/default.asp properties
+// Prefixes reference: http://peter.sh/experiments/vendor-prefixed-css-property-overview/
+
+//
+// Border and Outline Properties
+//
+.border-radius(@radius) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+
+.border-top-left-radius(@radius: 0) {
+    border-top-left-radius: @radius;
+    -moz-border-top-left-radius: @radius;
+    -webkit-border-top-left-radius: @radius;
+}
+
+.border-top-right-radius(@radius: 0) {
+    border-top-right-radius: @radius;
+    -moz-border-top-left-radius: @radius;
+    -webkit-border-top-left-radius: @radius;
+}
+
+.border-bottom-left-radius(@radius: 0) {
+    border-bottom-left-radius: @radius;
+    -moz-border-bottom-left-radius: @radius;
+    -webkit-border-bottom-left-radius: @radius;
+}
+
+.border-bottom-right-radius(@radius: 0) {
+    border-bottom-right-radius: @radius;
+    -moz-border-bottom-left-radius: @radius;
+    -webkit-border-bottom-left-radius: @radius;
+}
+
+.border-image(@source, @slice, @width, @outset, @repeat) {
+    border-image: url('{@source}') @slice @width @outset @repeat;
+    -moz-border-image: url('{@source}') @slice @width @outset @repeat;
+    -webkit-border-image: url('{@source}') @slice @width @outset @repeat;
+    -o-border-image: url('{@source}') @slice @width @outset @repeat;
+}
+
+// TODO when browser compatible
+// .border-image-outset
+// .border-image-repeat
+// .border-image-slice
+// .border-image-source
+// .border-image-width
+
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000) {
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
