@@ -2,6 +2,27 @@
 // Prefixes reference: http://peter.sh/experiments/vendor-prefixed-css-property-overview/
 
 //
+// Background Properties
+//
+.background-clip(@clip: border-box) {
+    background-clip: @clip;
+    -webkit-background-clip: @clip;
+}
+
+.background-origin(@origin: border-box) {
+    background-origin: @origin;
+    -webkit-background-origin: @origin;
+}
+
+.background-size(@size_x, @size_y) {
+    background-size: @size_x @size_y;
+    -webkit-background-size: @size_x, @size_y;
+}
+.background-size(@size) {
+    background-size(@size, @size);
+}
+
+//
 // Border and Outline Properties
 //
 .border-radius(@radius) {
