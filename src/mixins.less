@@ -166,3 +166,67 @@
     -ms-box-pack: @pack;
 }
 
+//
+// Font Properties
+//
+// .@font-face
+// .font-size-adjust
+// .font-stretch
+
+//
+// Multi-column Properties
+//
+.columns(@count: auto, @width: auto) {
+    columns: @arguments;
+    -moz-columns: @arguments;
+    -webkit-columns: @arguments;
+}
+
+.column-width(@width: auto) {
+    column-width: @width;
+    -moz-column-width: @width;
+    -webkit-column-width: @width;
+}
+
+.column-count(@count: auto) {
+    column-count: @count;
+    -moz-column-count: @count;
+    -webkit-column-count: @count;
+}
+
+// .column-fill
+
+.column-gap(@gap: normal) {
+    column-gap: @gap;
+    -moz-column-gap: @gap;
+    -webkit-column-gap: @gap;
+}
+
+.column-rule(@width: medium, @style: none, @color: black) {
+    column-rule: @arguments;
+    -moz-column-rule: @arguments;
+    -webkit-column-rule: @arguments;
+}
+
+.column-rule-width(@width: medium) {
+    column-rule-width: @width;
+    -moz-column-rule-width: @width;
+    -webkit-column-rule-width: @width;
+}
+
+.column-rule-style(@style: medium) {
+    column-rule-style: @style;
+    -moz-column-rule-style: @style;
+    -webkit-column-rule-style: @style;
+}
+
+.column-rule-color(@color: medium) {
+    column-rule-color: @color;
+    -moz-column-rule-color: @color;
+    -webkit-column-rule-color: @color;
+}
+
+.column-span(@span: 1) {
+    column-span: @span;
+    -webkit-column-span: @span;
+}
