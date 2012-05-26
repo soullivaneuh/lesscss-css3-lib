@@ -110,3 +110,59 @@
 }
 
 // .rendering-intent
+
+//
+// Flexible Box Properties
+//
+.display-box() {
+    display: box;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-box; 
+}
+
+.box-align(@align: stretch) {
+    box-align: @align;
+    -moz-box-align: @align;
+    -webkit-box-align: @align;
+    -ms-box-align: @align;
+}
+
+.box-direction(@direction: normal) {
+    box-direction: @direction;
+    -moz-box-direction: @direction;
+    -webkit-box-direction: @direction;
+    -ms-box-direction: @direction;
+}
+
+.box-flex(@flex: 0.0) {
+    box-flex: @flex;
+    -moz-box-flex: @flex;
+    -webkit-box-flex: @flex;
+    -ms-box-flex: @flex;
+}
+
+// .box-flex-group
+// .box-lines
+
+.box-ordinal-group(@ordinal-group: 1) {
+    box-ordinal-group: @ordinal-group;
+    -moz-box-ordinal-group: @ordinal-group;
+    -webkit-box-ordinal-group: @ordinal-group;
+    -ms-box-ordinal-group: @ordinal-group;
+}
+
+.box-orient(@orient: inline-axis) {
+    box-orient: @orient;
+    -moz-box-orient: @orient;
+    -webkit-box-orient: @orient;
+    -ms-box-orient: @orient;
+}
+
+.box-pack(@pack: start) {
+    box-pack: @pack;
+    -moz-box-pack: @pack;
+    -webkit-box-pack: @pack;
+    -ms-box-pack: @pack;
+}
+
