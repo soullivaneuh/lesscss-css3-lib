@@ -276,6 +276,125 @@
 }
 
 .t-matrix(@n1, @n2, @n3, @n4, @n5, @n6) {
-    @rule = "matrix(@{arguments})";
-    .transform(@rules);
+    .transform(matrix(@n1, @n2, @n3, @n4, @n5, @n6));
+}
+
+.t-matrix3d(@n1, @n2, @n3, @n4, @n5, @n6, @n7, @n8, @n9, @n10, @n11, @n12, @n13, @n14, @n15, @n16) {
+    .transform(matrix3d(@n1, @n2, @n3, @n4, @n5, @n6, @n7, @n8, @n9, @n10, @n11, @n12, @n13, @n14, @n15, @n16));
+}
+
+.t-translate(@x, @y) {
+    .transform(translate(@x, @y));
+}
+
+.t-translate3d(@x, @y, @z) {
+    .transform(translate3d(@x, @y, @z));
+}
+
+.t-translateX(@x) {
+    .transform(translateX(@x));
+}
+
+.t-translateY(@y) {
+    .transform(translateY(@y));
+}
+
+.t-translateZ(@z) {
+    .transform(translateZ(@z));
+}
+
+.t-scale(@x, @y) {
+    .transform(scale(@x, @y));
+}
+
+.t-scale3d(@x, @y, @z) {
+    .transform(scale3d(@x, @y, @z));
+}
+
+.t-scaleX(@x) {
+    .transform(scaleX(@x));
+}
+
+.t-scaleY(@y) {
+    .transform(scaleY(@y));
+}
+
+.t-scaleZ(@z) {
+    .transform(scaleZ(@z));
+}
+
+.t-rotate(@angle) {
+    .transform(rotate(@angle));
+}
+
+.t-rotate3d(@x, @y, @z, @angle) {
+    .transform(rotate3d(@x, @y, @z, @angle));
+}
+
+.t-rotateX(@angle) {
+    .transform(rotateX(@angle));
+}
+
+.t-rotateY(@angle) {
+    .transform(rotateY(@angle));
+}
+
+.t-rotateZ(@angle) {
+    .transform(rotateZ(@angle));
+}
+
+.t-skew(@x-angle, @y-angle) {
+    .transform(skew(@x-angle, @y-angle));
+}
+
+.t-skewX(@x-angle) {
+    .transform(skewX(@x-angle));
+}
+
+.t-skewY(@y-angle) {
+    .transform(skewY(@y-angle));
+}
+
+.t-perspective(@n) {
+    .transform(perspective(@n));
+}
+
+.transform-origin(@x-axis: 50%, @y-axis: 50%, @z-axis: 0) {
+    transform-origin: @arguments;
+    -ms-transform-origin: @arguments;
+    -webkit-transform-origin: @arguments;
+    -moz-transform-origin: @arguments;
+    -o-transform-origin: @arguments;
+}
+
+.transform-style(@style: flat) {
+    transform-style: @style;
+    -ms-transform-style: @style;
+    -webkit-transform-style: @style;
+    -moz-transform-style: @style;
+    -o-transform-style: @style;
+}
+
+.perspective(@perspective: none) {
+    perspective: @perspective;
+    -ms-perspective: @perspective;
+    -webkit-perspective: @perspective;
+    -moz-perspective: @perspective;
+    -o-perspective: @perspective;
+}
+
+.perspective-origin(@x-axis: 50%, @y-axis: 50%) {
+    perspective-origin: @arguments;
+    -ms-perspective-origin: @arguments;
+    -webkit-perspective-origin: @arguments;
+    -moz-perspective-origin: @arguments;
+    -o-perspective-origin: @arguments;
+}
+
+.backface-visibility(@visibility: visible) {
+    backface-visibility: @visibility;
+    -ms-backface-visibility: @visibility;
+    -webkit-backface-visibility: @visibility;
+    -moz-backface-visibility: @visibility;
+    -o-backface-visibility: @visibility;
 }
