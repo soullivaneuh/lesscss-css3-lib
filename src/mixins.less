@@ -14,12 +14,12 @@
     -webkit-background-origin: @origin;
 }
 
-.background-size(@size_x, @ @size_y) {
+.background-size(@size_x, @size_y) {
     background-size: @size_x @size_y;
-    -webkit-background-size: @size_x, @ @size_y;
+    -webkit-background-size: @size_x, @size_y;
 }
 .background-size(@size) {
-    .background-size(@size, @ @size);
+    .background-size(@size, @size);
 }
 
 //
@@ -55,7 +55,7 @@
     -webkit-border-bottom-left-radius: @radius;
 }
 
-.border-image(@source, @ @slice, @ @width, @ @outset, @ @repeat) {
+.border-image(@source, @slice, @width, @outset, @repeat) {
     border-image: url('{@source}') @slice @width @outset @repeat;
     -moz-border-image: url('{@source}') @slice @width @outset @repeat;
     -webkit-border-image: url('{@source}') @slice @width @outset @repeat;
@@ -68,7 +68,7 @@
 // .border-image-source
 // .border-image-width
 
-.box-shadow (@x: 0, @ @y: 0, @ @blur: 1px, @ @color: #000) {
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000) {
   box-shadow: @arguments;
   -moz-box-shadow: @arguments;
   -webkit-box-shadow: @arguments;
@@ -176,7 +176,7 @@
 //
 // Multi-column Properties
 //
-.columns(@count: auto, @ @width: auto) {
+.columns(@count: auto, @width: auto) {
     columns: @arguments;
     -moz-columns: @arguments;
     -webkit-columns: @arguments;
@@ -202,7 +202,7 @@
     -webkit-column-gap: @gap;
 }
 
-.column-rule(@width: medium, @ @style: none, @ @color: black) {
+.column-rule(@width: medium, @style: none, @color: black) {
     column-rule: @arguments;
     -moz-column-rule: @arguments;
     -webkit-column-rule: @arguments;
